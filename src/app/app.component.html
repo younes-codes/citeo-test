@@ -1,0 +1,8 @@
+<div *ngIf="isLoading">loading...</div>
+
+<div *ngIf="!isLoading">
+	<h2>Ville: {{cityName}}</h2>
+	<p>Température actuelle {{temp}} degrés</p>
+	<p>Levé du soleil:{{sunrisePipe | date: 'HH:mm' }} </p>
+	<p>Couché du soleil: {{sunsetPipe | date: 'HH:mm'}}</p>
+</div>
